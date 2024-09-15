@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Editable Resume Builder</h1>
+    </header>
+
+    <!-- Form to capture resume details -->
+    <form id="resume-form">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="contact" placeholder="Contact Number" required>
+
+        <h2>Education</h2>
+        <textarea id="education" placeholder="Enter your education details" required></textarea>
+
+        <h2>Work Experience</h2>
+        <textarea id="work-experience" placeholder="Enter your work experience" required></textarea>
+
+        <h2>Skills</h2>
+        <textarea id="skills" placeholder="Enter your skills" required></textarea>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Section to display the generated resume -->
+    <section id="resume-display">
+        <h2 style=" margin-top: 0;
+    margin-bottom: 1;">Generated Resume</h2>
+        <div id="resume-content">
+            <!-- Dynamically generated resume will appear here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

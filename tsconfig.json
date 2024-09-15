@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es5",  // Compiles TypeScript to ES5 for better browser compatibility :)
+    "module": "commonjs",  // module system
+    "outDir": "./dist",  // Directory to output the compiled JavaScript files
+    "rootDir": "./",  // The root directory of my TypeScript files
+    "strict": true,  // Enable strict type-checking options
+    "esModuleInterop": true,  // Enable ES module interoperability
+    "forceConsistentCasingInFileNames": true,  // Disallow inconsistently-cased references to the same file
+    "skipLibCheck": true  // Skip type checking of all declaration files
+  },
+  "include": ["./script.ts"],  
+  "exclude": ["node_modules"]  
+}
+
+  
